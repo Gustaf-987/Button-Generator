@@ -1,16 +1,3 @@
-
-// generateBtn.addEventListener("click", writePassword)
-
-// // // Write password to the #password input
-// function writePassword() {
-//     var password = generatePassword();
-//     var passwordText = document.querySelector("#password");
-  
-//     passwordText.value = password;
-//   }
-
-
-// var generateBtn = document.getElementsByClassName("passwordGeneratorForm")
 const charRange = document.getElementById("charRange")
 const charNumber = document.getElementById("charNumber")
 const form = document.getElementById("passwordGeneratorForm")
@@ -30,9 +17,11 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
      arrayFromLowToHigh(123,126)
     )
 
+// syncing character slider and selection box
 charRange.addEventListener("input", syncCharacterAmount)
 charNumber.addEventListener("input", syncCharacterAmount)
 
+// When clicking red button, run "generate password" fuction
 form.addEventListener("submit", e=> {
     e.preventDefault()
     const characterAmount = charNumber.value
@@ -57,6 +46,7 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
     return passwordCharacters.join("")     
 }
 
+// Pulling numbers/letters/characters from ASCII
 function arrayFromLowToHigh(low, high) {
     const array = []
     for (let y= low; y <= high; y++) {
