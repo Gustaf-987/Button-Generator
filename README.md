@@ -9,5 +9,4 @@ Links:
 Git-Hub: https://github.com/Gustaf-987/Homework3-Button-Generator
 Deployed: https://gustaf-987.github.io/Homework3-Button-Generator/
 
-![ScreenShot](C:\Users\minneapolis\Desktop\class-activities\03-JavaScript\02-Homework\Homework3-Button-Generator\Assets\Screenshot.png)
-
+![ScreenShot](https://github.com/Gustaf-987/Homework3-Button-Generator/blob/main/Assets/Screenshot.png)
